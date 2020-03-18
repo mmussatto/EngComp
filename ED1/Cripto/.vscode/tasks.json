@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "C:\\MinGW64\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "Criptograf.c",
+                "LDES.c",
+                "Main.c",
+                "-o",
+                "Main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
