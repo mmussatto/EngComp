@@ -2,8 +2,8 @@
     1 + 1/2 + 1/3 + ... + 1/n
 */
 
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 float Sum (float n)
 {

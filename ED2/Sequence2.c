@@ -2,9 +2,9 @@
     F(0) = 0 ; F(1) = 1 ; F(n) = F(n-1) + F(n-2)^2
 */
 
-#include "stdio.h"
-#include "stdlib.h"
-#include "math.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 double Sequence (int n)
 {

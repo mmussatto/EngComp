@@ -2,8 +2,8 @@
     Just input the natural number you want to transform
 */
 
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int Bin (int n)
 {

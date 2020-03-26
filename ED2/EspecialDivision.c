@@ -2,8 +2,8 @@
     2/4 + 5/5 + 10/6 + ... + (n^2 + 1)/(n+3)
 */
 
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 float Division (float n)
 {

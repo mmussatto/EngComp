@@ -2,8 +2,8 @@
     F(1) = 1 ; F(2) = 2 ; F(n) = 2*F(n-1) + 3*F(n-2)
 */
 
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int Sequence (int n)
 {
