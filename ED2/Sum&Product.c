@@ -1,5 +1,5 @@
-/*  The program generates the sequence:
-    F(0) = 0 ; F(1) = 1 ; F(n) = F(n-1) + F(n-2)^2
+/*  The program generates a randomized vector pf size 10
+    And calculates the product and the sum of its elements
 */
 
 #include <stdio.h>
