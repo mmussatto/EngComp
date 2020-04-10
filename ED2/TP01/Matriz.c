@@ -3,14 +3,15 @@
 
 #include "Matriz.h"
 
-Matriz* cria_Matriz()
-{
+Matriz* cria_Matriz() 
+{//retorna um ponteiro para o comeco da matriz
     Matriz *li = (Matriz*) malloc (sizeof(Matriz));
 
     if(li != NULL){ *li = NULL;}
 
     return li;
 }
+
 void libera_Matriz(Matriz *li)
 {//procedimento: limpar a linha apartira da coluna (j=1) e depois limpar o primeiro elemento da linha;
  //fazer isso para todas as linhas, de cima para baixo;
@@ -40,7 +41,7 @@ void libera_Matriz(Matriz *li)
 
 int insere_Matriz (Matriz *li, int i, int j, Tipo_Dado info)
 {
-    if(li == NULL) return ERRO;
+    if(li == NULL) return ERRO; //lista nao foi criada
 
     Elem *no;
     no = (Elem*) malloc (sizeof(Elem));
@@ -72,31 +73,31 @@ int insere_Matriz (Matriz *li, int i, int j, Tipo_Dado info)
     }
     else if (i == 0) //primeira linha
     {
-        Elem *aux;
+        Elem *aux; //ultimo no da linha
         aux = *li;
 
-        while (aux->j != j-1){ aux = aux->direita;}
+        while (aux->j != j-1){ aux = aux->direita;}//seleciona aux
 
         aux->direita = no;
         no->esquerda = aux;
-        no->acima = NULL;
+        no->acima = NULL; //nenhum elemento acima pois eh a primeira linha
     }
-    else //demais itens
+    else //demais elementos
     {
-        Elem *aux; //no na linha do novo e um espaco a esquerda
+        Elem *aux; //elemento na linha do novo e um espaco a esquerda
         aux = *li;
 
-        while (aux->i != i){ aux = aux->abaixo;} //seleciona a linha do novo no
-        while (aux->j != j-1){ aux = aux->direita;} //seleciona o no imediatamente a esquerda
+        while (aux->i != i){ aux = aux->abaixo;} //seleciona a linha do novo elemento
+        while (aux->j != j-1){ aux = aux->direita;} //seleciona o elemento imediatamente a esquerda
 
         aux->direita = no;
         no->esquerda = aux;
 
-        Elem *temp; //no imediatamente acima do novo
+        Elem *temp; //elemento imediatamente acima do novo
         temp = *li;
 
-        while (temp->i != i-1){ temp = temp->abaixo;} //seleciona a linha acima do novo no
-        while (temp->j != j){ temp = temp->direita;}  //seleciona a coluna do novo no
+        while (temp->i != i-1){ temp = temp->abaixo;} //seleciona a linha acima do novo elemento
+        while (temp->j != j){ temp = temp->direita;}  //seleciona a coluna do novo elemento
 
         temp->abaixo = no;
         no->acima = temp;
@@ -108,16 +109,16 @@ int insere_Matriz (Matriz *li, int i, int j, Tipo_Dado info)
 }
 
 void imprime_Matriz(Matriz *li)
-{
+{//percorre as linhas da esquerda para a direita 
     Elem *linha = *li;
     Elem *no;
 
     if(li == NULL) return;
 
-    while(linha != NULL)
+    while(linha != NULL) //imprime as linhas 
     {
         no = linha;
-        while (no != NULL)
+        while (no != NULL) //imprime as colunas
         {
             printf("%d ", no->info);
             no = no->direita;

@@ -6,7 +6,7 @@ typedef int Tipo_Dado;
 
 struct elemento 
 {
-    int i, j;
+    int i, j; //coordenadas do elemento
     Tipo_Dado info;
     struct elemento *acima;
     struct elemento *direita;
@@ -21,6 +21,6 @@ typedef struct elemento* Matriz;
 //------------------------------------
 
 Matriz* cria_Matriz();
-void libera_Matriz();
+void libera_Matriz(Matriz *li);
 int insere_Matriz (Matriz *li, int i, int j, Tipo_Dado info);
 void imprime_Matriz();
