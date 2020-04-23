@@ -10,7 +10,8 @@ int main()
     int i;
     srand(time(0));
     int tamanho = sizeof(v)/sizeof(int);
-    
+    int cont;
+
     printf("Original: ");
     for(i=0;i<tamanho;i++)
     {
@@ -20,13 +21,25 @@ int main()
     printf("\n\n");
 
 //------------- Bubble Sort -----------------------------
+/*    
     printf("Bubble Sort: ");
-    Bubble_Sort(v,tamanho);
+    cont = Bubble_Sort(v,tamanho);
+    for(i=0;i<10;i++)
+    {
+        printf("%d ", v[i]);
+    }
+    printf("\nOperacoes: %d\n", cont);
+*/
+//------------- Quick Sort ------------------------------
+
+    printf("Quick Sort: ");
+    Quick_Sort(v,0,tamanho);
     for(i=0;i<10;i++)
     {
         printf("%d ", v[i]);
     }
     printf("\n");
+
 
     system("pause");
     return 0;
