@@ -9,18 +9,19 @@ int main()
     int v[10];
     int i;
     srand(time(0));
-
-
+    int tamanho = sizeof(v)/sizeof(int);
+    
     printf("Original: ");
-    for(i=0;i<10;i++)
+    for(i=0;i<tamanho;i++)
     {
         v[i] = rand()%10;
         printf("%d ", v[i]);
     }
     printf("\n\n");
 
+//------------- Bubble Sort -----------------------------
     printf("Bubble Sort: ");
-    Bubble_Sort(v,10);
+    Bubble_Sort(v,tamanho);
     for(i=0;i<10;i++)
     {
         printf("%d ", v[i]);
