@@ -7,3 +7,7 @@ final do vetor, sendo que na proxima iteracao, ele nao precisa olhar a ultima po
 ja que o maior elemento do vetor ja esta nela*/
 
 int Quick_Sort(int v[], int b, int n);
+/*O quick sort vai definir um pivot (no caso, o elemento central do vetor) e achar
+a posicao final desse elemento no vetor ordenado. Entao, o quick sort sera aplicado nos
+dois subvetores criados, a direita e a esquerda do pivot*/
+

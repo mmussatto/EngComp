@@ -35,28 +35,41 @@ int Quick_Sort(int v[], int b, int n)
 {
     int i, j, k, aux;
 
-    i = b;
-    j = n;
-    k = v[(b+n)/2];
+    int cont = 0; //contador de operacoes
+
+    i = b; //lado esquerdo
+    j = n; //lado direito
+    k = v[(b+n)/2]; //pivot, elemento central
+    cont += 3;
 
     do
     {
-        while(v[i] < k){ i++; }
+        cont++;
+        while(v[i] < k){ i++; cont++; } //percorre da esq p/ direita selecioando o primeiro elemento maior que o pivot
 
-        while(k < v[j]){ j--; }
+        cont++;
+        while(k < v[j]){ j--; cont++; } //percorre da dir p/ esq selecionando o primeiro elemenro menor que o pivot
 
-        if(i <= j)
-        {
+        cont++;
+        if(i <= j) 
+        {//troca os elementos selecionados de posicao (menor p/ esq e maior p/ dir)
             aux = v[i];
             v[i] = v[j];
             v[j] = aux;
             i++;
             j--;
+            cont += 5;
         }
 
-    } while (i <= j);
+    cont++;
+    } while (i <= j); //quando os pointer se cruzarem, o lado esq do pivot sera menor que ele e o lado dir sera maior
 
-    if(b < j){ Quick_Sort(v, b, j);}
+    cont++;
+    if(b < j){ cont += Quick_Sort(v, b, j);} //aplica quicksort para o lado esq
 
-    if(i< n){ Quick_Sort(v, i, n);}
+    cont++;
+    if(i < n){ cont += Quick_Sort(v, i, n);} //aplica quicksort para o lado dir
+
+    return cont;
 }
+
