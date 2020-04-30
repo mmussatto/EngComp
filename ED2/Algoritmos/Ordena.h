@@ -11,3 +11,4 @@ int Quick_Sort(int v[], int b, int n);
 a posicao final desse elemento no vetor ordenado. Entao, o quick sort sera aplicado nos
 dois subvetores criados, a direita e a esquerda do pivot*/
 
+int Selection_Sort(int v[], int T);
