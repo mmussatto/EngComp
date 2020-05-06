@@ -16,3 +16,7 @@ int Selection_Sort(int v[], int T);
 /*O Selection Sort escaneia o vetor procurando o maior elemento e apos acha-lo, o coloca
 na ultima posicao do vetor. O algoritimo roda novamente sem levar em conta a ultima posicao
 pois o maior elemento já está la*/
+
+int Heap_Sort(int v[], int n);
+void faz_Heap(int v[], int n);
+void ajuste(int v[], int i, int n);

@@ -109,3 +109,17 @@ int Selection_Sort(int v[], int T)
 
     return cont;
 }
+
+
+int Heap_Sort(int v[], int n)
+{
+
+}
+void faz_Heap(int v[], int n)
+{
+
+}
+void ajuste(int v[], int i, int n)
+{
+
+}
