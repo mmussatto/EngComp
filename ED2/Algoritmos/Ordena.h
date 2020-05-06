@@ -20,3 +20,6 @@ pois o maior elemento já está la*/
 int Heap_Sort(int v[], int n);
 void faz_Heap(int v[], int n);
 void ajuste(int v[], int i, int n);
+
+
+int Insertion_Sort(int v[], int n);

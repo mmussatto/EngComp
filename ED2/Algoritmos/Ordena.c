@@ -110,7 +110,7 @@ int Selection_Sort(int v[], int T)
     return cont;
 }
 
-
+/*
 int Heap_Sort(int v[], int n)
 {
 
@@ -123,3 +123,20 @@ void ajuste(int v[], int i, int n)
 {
 
 }
+Nao implementado*/
+
+int Insertion_Sort(int v[], int n)
+{
+    int i, j ,k;
+
+    for(j = 0; j < n; j++)
+    {
+        k = v[j];
+        for(i = k-1; i >= 0 && k < v[i]; i--)
+        {
+            v[i+1] = v[i];
+        }
+        v[i+1] = k;
+    }
+}
+
