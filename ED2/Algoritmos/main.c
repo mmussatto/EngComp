@@ -15,7 +15,7 @@ int CopiaVet (int v[], int v2[], int tam)
 
 int main()
 {
-    int v[10], v1[10];
+    int v[30], v1[30];
     int i;
     srand(time(0));
     int tamanho = sizeof(v)/sizeof(int);
@@ -58,6 +58,18 @@ int main()
     printf("Selection Sort: ");
     CopiaVet(v, v1, tamanho);
     cont = Selection_Sort(v1, tamanho);
+    for(i=0;i<tamanho;i++)
+    {
+        printf("%d ", v1[i]);
+    }
+    printf("\nOperacoes: %d\n\n\n", cont);
+
+
+//-------------- Insertion Sort ------------------------
+
+    printf("Insertion Sort: ");
+    CopiaVet(v, v1, tamanho);
+    cont = Insertion_Sort(v1,tamanho);
     for(i=0;i<tamanho;i++)
     {
         printf("%d ", v1[i]);

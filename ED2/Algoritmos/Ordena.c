@@ -128,15 +128,25 @@ Nao implementado*/
 int Insertion_Sort(int v[], int n)
 {
     int i, j ,k;
+    int cont = 0; //contador de operacoes
 
+    cont += 2;
     for(j = 0; j < n; j++)
-    {
-        k = v[j];
-        for(i = k-1; i >= 0 && k < v[i]; i--)
-        {
-            v[i+1] = v[i];
+    {//percorre o vetor da esquerda para a direita
+        cont += 3;
+
+        cont++; k = v[j]; //guarda o valor do elemento que sera comparado
+
+        cont += 4;
+        for(i = j-1; i >= 0 && k < v[i]; i--)
+        {//percorre o vetor da direita para a esquerda a partir do elemento j
+        //so executa caso i positivo e o se o valor do antecessor for maior que o elemento j
+            cont += 4;
+            cont+=2; v[i+1] = v[i]; //move o elemento maior que k para a direita 
         }
-        v[i+1] = k;
+        
+        cont+=2; v[i+1] = k; //coloca o elemento j na posicao correta (i+1)
     }
+    return cont;
 }
 
