@@ -76,6 +76,18 @@ int main()
     }
     printf("\nOperacoes: %d\n\n\n", cont);
 
+
+//--------------- Shell Sort ---------------------------
+/*
+    printf("Shell Sort: ");
+    CopiaVet(v, v1, tamanho);
+    Shell_Sort(v1,tamanho);
+    for(i=0;i<tamanho;i++)
+    {
+        printf("%d ", v1[i]);
+    }
+    //printf("\nOperacoes: %d\n\n\n", cont);
+*/
     system("pause");
     return 0;
 }

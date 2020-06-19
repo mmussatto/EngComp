@@ -110,7 +110,7 @@ int Selection_Sort(int v[], int T)
     return cont;
 }
 
-/*
+/*Heap Sort
 int Heap_Sort(int v[], int n)
 {
 
@@ -148,5 +148,26 @@ int Insertion_Sort(int v[], int n)
         cont+=2; v[i+1] = k; //coloca o elemento j na posicao correta (i+1)
     }
     return cont;
+}
+
+int Shell_Sort(int v[], int n, int increments[], int numinc)
+{
+    int incr, j, k, span, y;
+
+    for ( incr = 0; incr < numinc; incr++) 
+    {
+        span = increments[incr]; //span e o tamanho do incremento
+
+        for(j = span; j < n; j++)
+        {
+            y = v[j];
+
+            for ( k = j - span; k >= 0 && y < v[k]; k-= span)
+            {
+                v[k+span] = v[k];
+            }
+            v[k+span] = y;
+        }
+    }
 }
 
