@@ -26,3 +26,5 @@ int Insertion_Sort(int v[], int n);
 /*O Insertion Sort percorre todo o vetor, da esquerda para a direita, comparando um elemento
 com todos os seus antecessores. Assim, caso um elemento esteja fora de lugar (seja menor que seu antecessor)
 o algoritmo ira compara-lo com todos os seus antecessores ate achar um que seja menor que ele. Entao a troca sera feita*/
+
+int Shell_Sort(int v[], int n, int increments[], int numinc);
