@@ -1,0 +1,8 @@
+#vscode config
+c_cpp_properties.json
+launch.json
+tasks.json
+
+#mains
+Main.exe
+
