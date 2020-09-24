@@ -3,6 +3,9 @@
 
     An exemple of input would be:
 
+    caso1.csv
+
+======== caso1.csv ========================
     ID-DO-USUARIO,NOME,IDADE
     1,Joao,30
     2,,15
@@ -10,6 +13,7 @@
     4,,24
     5,Jose,56
     6,Leticia,10
+==========================================
 
 */
 
