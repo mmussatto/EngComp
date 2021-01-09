@@ -1,0 +1,30 @@
+	;Nesse exercicio, o registrado X foi usado para controlar o indicie do vetor para pegar os dados
+	; e o regsitrador Y para controlar o numero de operacoes
+	
+
+	.ORG $1000
+	LDA Dados,X 	;carrega o primeiro dado no acumulador
+	LDY Qtde    	;carrega a quantidade de dadso no reg. Y
+	DEY		;Decreementa o reg.Y pois ja tem um dado no acumulador
+	INX		;incrementa o reg.X para pegar o segundo elemento do vetor
+Start:	ADC Dados,X	;soma o elemento de indice X do vetor no acumulador 
+	INX		;incrementa o reg.X para pegar o proximo elemento
+	BCS Carry	;desvia caso tenha carry
+Back:	DEY		;decrementa reg.Y para diminuir o numero de operacoes
+	BEQ Finish	;se reg.Y for zero, desvia para Finish
+	JMP Start	;volta o loop de soma
+	
+	
+Carry:	INC Soma+1	;incrementa o segundo espaco da soma (little endian)
+	CLC		
+	JMP Back	;volta para a operacao
+	
+Finish: STA Soma+0	;guarda o valor menos significativo no primeiro espaco da soma
+	BRK		;finaliza o programa
+	
+	
+	
+Dados:	.DB 101, 102, 103, 104, 105
+Qtde:	.DB 5
+Soma:	.DW $0000
+			
