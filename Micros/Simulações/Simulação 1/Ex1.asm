@@ -1,0 +1,9 @@
+	ORG 0
+	
+	MOV A, 30h
+	ADD A, 31h
+
+	MOV 32h, A
+
+LOOP: 	SJMP LOOP	
+	END

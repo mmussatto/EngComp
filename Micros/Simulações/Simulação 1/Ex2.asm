@@ -1,0 +1,8 @@
+	ORG 0
+	
+	MOV DPTR, #1200h
+	MOVX A, @DPTR
+	MOV 30h, A
+	
+LOOP:	SJMP LOOP
+	END
