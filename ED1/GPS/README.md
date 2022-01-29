@@ -39,7 +39,7 @@ Ele possui três modos de operação:
 >2
 >
 >22.01052233 47.88957983
-
+>
 >22.01052233 47.88957983
 >
 >0
@@ -98,7 +98,7 @@ Ele possui três modos de operação:
 
 >autuado
 >
->8.265013``
+>8.265013
 
 ## Modo 2
 
