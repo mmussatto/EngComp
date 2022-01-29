@@ -16,12 +16,18 @@ Para formas os grupos, o programa constrói uma tabela hash. As strings são ord
 
 ## Exemplo de Strings
 
-ihgcb
-abghi
-gcbih
-bgiha
-gibch
-hibcg
+>ihgcb
+>
+>abghi
+>
+>gcbih
+>
+>bgiha
+>
+>
+>gibch
+>
+>hibcg
 
 ## Exemplos de Entrada e Saída
 
