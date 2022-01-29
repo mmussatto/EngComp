@@ -1,9 +1,11 @@
 
-# Informações
+# Trabalho de GPS do curso de Estrutura de Dados 1 - 2019.
+
+## Informações
 
 A descrição completa do trabalho pode ser encontrada no arquivo em PDF presente na pasta.
 
-# Descrição
+## Descrição
 
 Esse código recebe uma série de dados de Longitude e Latitude como entrada. 
 
@@ -30,9 +32,9 @@ Ele possui três modos de operação:
     É necessária uma entrada adicional: limite de distância do processo de simplificação, em metros
 
 
-# Exemplos de Entrada e Saída
+## Exemplos de Entrada e Saída
 
-## Modo 0
+### Modo 0
 
 **Enrtrada**
 
@@ -52,7 +54,7 @@ Ele possui três modos de operação:
 >22.010522 47.889580 1 0.000000 0.000000
 >
 
-## Modo 1
+### Modo 1
 
 **Enrtrada**
 
@@ -100,7 +102,7 @@ Ele possui três modos de operação:
 >
 >8.265013
 
-## Modo 2
+### Modo 2
 
 **Enrtrada**
 
