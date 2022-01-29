@@ -19,7 +19,7 @@ A saída mostra o tamanho da mensagem original, o tamnanho da mensagem depois da
 
 ### Modo 0
 
-**Enrtrada**
+**Entrada**
 
 >0
 >
@@ -38,7 +38,7 @@ A saída mostra o tamanho da mensagem original, o tamnanho da mensagem depois da
 
 ### Modo 1
 
-**Enrtrada**
+**Entrada**
 
 >1
 >

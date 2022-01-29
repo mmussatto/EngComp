@@ -36,7 +36,7 @@ Ele possui três modos de operação:
 
 ### Modo 0
 
-**Enrtrada**
+**Entrada**
 
 >2
 >
@@ -56,8 +56,7 @@ Ele possui três modos de operação:
 
 ### Modo 1
 
-**Enrtrada**
-
+**Entrada**
 
 >13
 >
@@ -104,7 +103,7 @@ Ele possui três modos de operação:
 
 ### Modo 2
 
-**Enrtrada**
+**Entrada**
 
 >13
 >
