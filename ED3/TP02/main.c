@@ -4,6 +4,8 @@
 |
 |   Desenvolvido por: Murilo Mussatto
 |               NUSP: 11234245
+|
+|   Data: 12/2020
 */
 
 #include <stdio.h>
