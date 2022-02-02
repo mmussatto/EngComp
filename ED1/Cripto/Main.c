@@ -1,3 +1,14 @@
+/*
+|   SSC0603 Estrutura de Dados I
+|   Trabalho 1: Criptografia com Chave Simétrica
+|
+|   Desenvolvido por: Murilo Mussatto
+|               NUSP: 11234245
+|
+|   Data: 09/2019
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "LDES.h"

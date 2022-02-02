@@ -1,3 +1,13 @@
+/*
+|   SSC0603 Estrutura de Dados I
+|   Trabalho 2: Detran Maps Simulator
+|
+|   Desenvolvido por: Murilo Mussatto
+|               NUSP: 11234245
+|
+|   Data: 09/2019
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "LDED.h"

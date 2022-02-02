@@ -1,3 +1,14 @@
+/*
+|   SSC0603 Estrutura de Dados I
+|   Trabalho 3: E no final... A árvore decide.
+|
+|   Desenvolvido por: Murilo Mussatto
+|               NUSP: 11234245
+|
+|   Data: 12/2019
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
