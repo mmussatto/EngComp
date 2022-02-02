@@ -1,4 +1,4 @@
-# Trabalho de Árvores do curso de Estrutura de Dados 1 - 2019. 
+# Trabalho de Árvores do curso de Estrutura de Dados 1 - 12/2019. 
   
 ## Informações
 

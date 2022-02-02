@@ -1,5 +1,5 @@
 
-# Trabalho de GPS do curso de Estrutura de Dados 1 - 2019.
+# Trabalho de GPS do curso de Estrutura de Dados 1 - 10/2019.
 
 ## Informações
 
