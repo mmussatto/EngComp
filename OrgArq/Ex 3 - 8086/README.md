@@ -11,5 +11,5 @@ A descrição completa do exercício pode ser encontrada no PDF presente na past
  
 ## Simulador 8086
  
-O simulador do microprocessador pode ser encontrado na pasta [Emulators/Intel 8086]()
+O simulador do microprocessador pode ser encontrado na pasta [Emulators/Intel 8086](https://github.com/mmussatto/EngComp/tree/master/OrgArq/Emulators/Intel%208086)
 
