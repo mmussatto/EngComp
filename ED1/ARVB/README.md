@@ -1,20 +1,20 @@
-# Trabalho de Árvores do curso de Estrutura de Dados 1 - 12/2019. 
-  
+# Trabalho de Árvores do curso de Estrutura de Dados 1 - 12/2019.
+ 
 ## Informações
-
+ 
 A descrição completa do trabalho pode ser encontrada no arquivo em PDF presente na pasta.
-
+ 
 ## Descrição
-
+ 
 Esse código possui duas etapas:
-
-1. Primeiramente é construida uma árvore de decisões binária. A semântica utilziada pode ser analisada no PDF presente na pasta.
+ 
+1. Primeiramente é construída uma árvore de decisões binária. A semântica utilizada pode ser analisada no PDF presente na pasta.
 2. Inserção de dados conhecidos e escolha da decisão final.
-
+ 
 ## Exemplos de Entrada e Saída
-
+ 
 **Entrada**
-
+ 
 >7
 >
 >B000 "E estudante?" R000
@@ -40,10 +40,10 @@ Esse código possui duas etapas:
 >E F E V E 32000.0
 >
 >E F N
-
-
+ 
+ 
 **Saída**
-
+ 
 >Nao liberar o emprestimo
 >
 >Nao liberar o emprestimo
@@ -51,5 +51,8 @@ Esse código possui duas etapas:
 >Liberar ate 15 mil reais
 >
 >Nao liberar o emprestimo
-
+ 
+ 
+ 
+ 
 

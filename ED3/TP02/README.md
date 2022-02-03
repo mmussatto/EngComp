@@ -16,7 +16,7 @@ Esse trabalho possui 3 funcionalidades e segue a numeração do trabalho anterio
  
 ### Funcionalidade 6:
  
-Essa funcionalidade é similar à funcionalidade 1 do primeiro trabalho. Assim, ela é responsável por ler a base de dados fornecida no arquivo .csv e montar o arquivo de dados *segue*. Para efeitos de correção, a função "binarioNaTela" também é chamada no final do programa, e retorna um número específico caso o arquivo tivesse sido criado corretamente.
+Essa funcionalidade é similar à funcionalidade 1 do primeiro trabalho. Assim, ela é responsável por ler a base de dados fornecida no arquivo .csv e montar o arquivo de dados *segue*. Para efeitos de correção, a função "binarioNaTela" também é chamada no final do programa, e retorna um número específico caso o arquivo tenha sido criado corretamente.
  
 ### Funcionalidade 7:
  
@@ -34,4 +34,7 @@ Por fim, os dados são apresentados no terminal de forma ordenada e com o devido
 ## Informações Adicionais
  
 Todas as funcionalidades possuem um padrão de entrada e os arquivos envolvidos precisam estar devidamente construídos para que o programa funcione corretamente. Os padrões de entradas e uma descrição mais detalhada de cada funcionalidade pode ser encontrada na descrição do trabalho (PDF na pasta)
+ 
+ 
+ 
 
