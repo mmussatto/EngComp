@@ -28,7 +28,7 @@ Essa funcionalidade permite a recuperação dos dados armazenados no arquivo bin
  
 A funcionalidade 3 permite a busca de registros que satisfazem uma determinada condição. O usuário pode escolher qualquer um dos campos para fazer a procura. Entretanto, se ele optar por fazer a busca utilizando o campo *idPessoa*, o arquivo de índice é utilizado para fazer a busca, juntamente com o algoritmo de **Busca Binária**.
  
-#### Funcionalidade 4
+### Funcionalidade 4
  
 Essa funcionalidade permite a inclusão de registros adicionais ao arquivo de dados. Para isso ela procura por registros *logicamente removidos* e substitui os campos pelas informações passadas pelo usuário, fazendo o devido truncamento dos dados quando necessário. Ela pode ser executada diversas vezes em sequência
  
