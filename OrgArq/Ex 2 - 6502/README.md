@@ -11,5 +11,5 @@ A descrição completa do exercício pode ser encontrada no PDF presente na past
  
 ## Simulador
  
-O simulador do microprocessador pode ser encontrado na pasta compactada [Emulators/MOS 6502]()
+O simulador do microprocessador pode ser encontrado na pasta compactada [Emulators/MOS 6502](https://github.com/mmussatto/EngComp/tree/master/OrgArq/Emulators/MOS%206502)
 
