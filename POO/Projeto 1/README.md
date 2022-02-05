@@ -10,8 +10,11 @@ Como esta é apenas a primeira parte do trabalho, o jogo não está completament
 
 O trabalho finalizado pode ser encontrado na pasta [POO/Porjeto 2](https://github.com/mmussatto/EngComp/tree/master/POO/Projeto%202)
 
+## Informações
+
 Vale ressaltar que o código foi escrito dentro da IDE NetBeans. 
 
+Uma descrição completa do exercício pode ser encontrada no PDF "["projeto_parte_1"](https://github.com/mmussatto/EngComp/blob/master/POO/Projeto%201/projeto_parte1.pdf) presente na pasta.
 
 ## Execução do Programa
 
