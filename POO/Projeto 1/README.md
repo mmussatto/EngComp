@@ -22,4 +22,4 @@ Como o jogo roda no terminal, basta entrar na pasta [SpaceInvaders/dist](https:/
 
 ## Exemplo
 
-![Exemplo do jogo rodando](POO\Projeto 1\Img\Example.png)
+![Exemplo do jogo rodando](https://github.com/mmussatto/EngComp/blob/master/POO/Projeto%201/Img/Example.png)
