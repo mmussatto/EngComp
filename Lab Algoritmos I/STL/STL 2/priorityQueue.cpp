@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#include <stack>
 
 
 struct job
@@ -26,19 +27,25 @@ void printQueue (std::priority_queue<job> pq)
 }
 
 
+
+
 int main ()
 {
 
-    int nTestes, n, m;
-
-    std::priority_queue<job> pq;
+    int nTestes;
 
     std::cin >> nTestes;
 
     while (nTestes--)
     {
-        std::cin >> n >> m;
 
+        int n, m;
+
+        std::queue<job> jobQueue;
+        std::priority_queue<int> pq;
+
+
+        std::cin >> n >> m;
 
         int i = 0;
         while (i < n)
@@ -52,18 +59,31 @@ int main ()
                 temp.myjob = true;
             }
 
-            pq.push(temp);
+            jobQueue.push(temp);
+            pq.push(temp.priority);
 
             i++;
         }
 
         i = 0;
-        while (!pq.top().myjob)
+        while (!jobQueue.front().myjob || jobQueue.front().priority != pq.top())
         {
-            pq.pop();
-            i++;
+            job j = jobQueue.front();
+
+            if(j.priority == pq.top())
+            {
+                jobQueue.pop();
+                pq.pop();
+                i++;
+            }
+            else
+            {
+                jobQueue.pop();
+                jobQueue.push(j);
+            }
         }
         
+        i++;
         std::cout << i << "\n";
 
         //printQueue(pq);
@@ -71,10 +91,6 @@ int main ()
 
     }
     
-
-
-
-
 
     return 0;
 }
