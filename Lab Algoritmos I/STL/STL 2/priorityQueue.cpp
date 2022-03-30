@@ -1,12 +1,19 @@
 #include <iostream>
 #include <queue>
-#include <stack>
 
 /*Structed use to remember with job was important*/
 struct job
 {
     int priority;
     bool myjob = false;
+    
+    bool operator<(const job& other)const
+    {
+        if(priority == other.priority)
+            return true;
+
+        return priority < other.priority;
+    }
 };
 
 
