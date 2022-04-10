@@ -2,8 +2,8 @@
 c_cpp_properties.json
 launch.json
 tasks.json
+settings.json
 
 #mains
-Main.exe
-main.exe
 *exe
+
