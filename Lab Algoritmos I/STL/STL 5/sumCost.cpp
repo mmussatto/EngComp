@@ -2,17 +2,16 @@
 
 int main ()
 {
-    int n_numbers, number;
-    int sum = 0,  cost = 0;
+    int n_numbers, number, sum;
+    int cost = 0;
 
-    std::multiset<int , std::less<int>> mset;
-    std::priority_queue<int, std::vector<int>, std::greater<int>> pq;
+    std::priority_queue<int, std::vector<int>, std::greater<int>> pq; //min-heap
 
-    std::cin >> n_numbers;
+    std::cin >> n_numbers;  //read quantity of numbers
 
     while (n_numbers != 0)
     {
-        while (n_numbers--)
+        while (n_numbers--) //push all numbers to min-heap
         {
             std::cin >> number;
             pq.push(number);
@@ -20,34 +19,34 @@ int main ()
 
         while (true)
         {
-            int n1 = pq.top();
+            int n1 = pq.top();  //get smallest number
             pq.pop();
 
-            int n2 = pq.top();
+            int n2 = pq.top();  //get second smallest number
             pq.pop();
 
-            sum = n1 + n2;
+            sum = n1 + n2;  
 
-            cost += sum;
+            cost += sum;    //update cost of sum
 
-            if (pq.empty())
+            if (pq.empty()) //
             {
                 break;
             }
-            else
+            else    //min-hep not empty
             {
-                pq.push(sum);
+                pq.push(sum);   //push sum to heap
             }
 
         }
         
-
+        //Print cost
         std::cout << cost << "\n";
 
-        sum = 0;
+        //Reset cost
         cost = 0;
-        mset.clear();
 
+        //Read next quantity of numbers
         std::cin >> n_numbers;
         
     }
