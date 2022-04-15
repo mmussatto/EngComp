@@ -1,6 +1,7 @@
 #include<iostream>
 #include<queue>
 
+/*Function for clearing the pq between test cases*/
 void clear_pq (std::priority_queue<int, std::vector<int>, std::greater<int>> *pq)
 {
     while (!pq->empty())
@@ -8,6 +9,7 @@ void clear_pq (std::priority_queue<int, std::vector<int>, std::greater<int>> *pq
         pq->pop();
     }
 }
+
 
 int main ()
 {
@@ -36,7 +38,8 @@ int main ()
             std::cin >> temp;
             knights.push(temp);
         }
-        
+
+        //greedy algorithm        
         while (true)
         {
             int top_head = heads.top();
