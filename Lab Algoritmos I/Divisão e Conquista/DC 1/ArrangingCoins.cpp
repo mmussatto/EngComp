@@ -10,22 +10,24 @@ int binarySearch(int n)
     {
         mid = left + (right - left)/2;
 
-        long int sum = (1 + mid)*mid/2;
+        long int sum = (1 + mid)*mid/2;  //sum of all coins used until the mid_th row
 
-        if(sum == n)
+        if(sum == n)    //sum of mid row is exactly the number of coins (n)
             return mid;
 
-        if(sum > n)
+        if(sum > n) //sum is bigger than number of coins available, get smaller rows
         {
             right = mid - 1;
         }
-        else
+        else    //sum is smaller than number of coins available, get greater rows
         {
             left = mid + 1;
         }
     }
 
-    return right;
+    //if gets here, there is no complete row with the exact number of coins
+    //right variable has the last complete row 
+    return right;   
 }
 
 int main ()
