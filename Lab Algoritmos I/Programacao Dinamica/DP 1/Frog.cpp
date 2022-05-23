@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <math.h>
+#include <climits>
 
 int main ()
 {
@@ -18,39 +19,27 @@ int main ()
         v_height.push_back(temp);   
     }
 
-    int totalCost = 0;
+    int i = v_height.size();
 
-    int i = v_height.size() - 1;
+    std::vector<int> dp (i, INT_MAX);
 
-    //iterate through rocks starting at the end
-    while (i > 0)
+    dp[i-1] = 0; //final rock
+    dp[i-2] = std::abs(v_height[i-1]-v_height[i-2]); //second last rock
+
+    i = i - 3;
+
+    while(i >= 0)
     {
-        if (i == 1) //only one movement possible
-        {
-            totalCost += std::abs(v_height[i]-v_height[i-1]);
-            break;
-        }
-        
-        //calculate cost of jumping one or two rocks
-        int cost1 = std::abs(v_height[i]-v_height[i-1]);
-        int cost2 = std::abs(v_height[i]-v_height[i-2]);
+        int cost1 = std::abs(v_height[i]-v_height[i+1]) + dp[i+1];
+        int cost2 = std::abs(v_height[i]-v_height[i+2]) + dp[i+2];
 
-        //choose the smaller cost
-        if (cost1 < cost2)
-        {
-            i = i -1;
-            totalCost += cost1;
-        }
-        else
-        {
-            i = i- 2;
-            totalCost += cost2;
-        }
+        dp[i] = std::min(cost1, cost2);
+
+        i--;
     }
-    
-    //print total cost
-    std::cout << totalCost;
 
+    //print total cost
+    std::cout << dp[0];
 
     return 0;
 }
