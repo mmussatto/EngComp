@@ -20,6 +20,7 @@ int main ()
 
     dp[0] = matrix[0];
 
+    //Iterate through matrix
     for (int i = 1; i < n; i++)
     {
         dp[i][0] = matrix[i][0] + std::max(dp[i-1][1], dp[i-1][2]); 
@@ -27,6 +28,7 @@ int main ()
         dp[i][2] = matrix[i][2] + std::max(dp[i-1][0], dp[i-1][1]);        
     }
     
+    //Get max happines
     std::cout << std::max({dp[n-1][0], dp[n-1][1], dp[n-1][2]});
     
 
