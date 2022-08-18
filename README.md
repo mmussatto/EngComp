@@ -11,3 +11,10 @@ This repository was created to store all the programs created by me throughout m
 The programs are divided by course. For instance, the folder EDI represents the programs created during the Data Structures I course. Also, most of the folders have a readme file explaining briefly what the program does.
 
 Finally, bear in mind that most, if not all, comments and readme files are written in Brazilian Portuguese.
+
+## Interesting Projects
+
+- [Space Invaders Game in Java](https://github.com/mmussatto/EngComp/tree/master/POO/Projeto%202)
+- [File management and graphs in C](https://github.com/mmussatto/EngComp/tree/master/ED3/Projetos)
+- [Elevator simulation in 8086 Assembly](https://github.com/mmussatto/EngComp/tree/master/OrgArq/TP01)
+- [Caesar cipher encryption using linked lists in C](https://github.com/mmussatto/EngComp/tree/master/ED1/Cripto)
