@@ -4,6 +4,8 @@ launch.json
 tasks.json
 settings.json
 
+.vscode/
+
 #mains
 *exe
 
