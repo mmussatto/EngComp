@@ -2,24 +2,24 @@
 
 using namespace std;
 
-int calculate_song(vector<pair<size_t, size_t>>& playlist, size_t& moment, size_t& minutes, size_t& song)
+int calculate_song(vector<pair<size_t, size_t>> &playlist, size_t &moment, size_t &minutes, size_t &song)
 {
-    if(minutes >= moment)
+    if (minutes >= moment)
         return song;
 
-    for(size_t i = song; i < playlist.size(); i++)
+    for (size_t i = song; i < playlist.size(); i++)
     {
         minutes += playlist[i].second * playlist[i].first;
         playlist[i].first = 0;
 
-        if(minutes >= moment)
+        if (minutes >= moment)
             return i;
     }
 
     return -1;
 }
 
-int main ()
+int main()
 {
     size_t n, m;
     cin >> n >> m;
@@ -41,6 +41,6 @@ int main ()
         song = calculate_song(playlist, moment, minutes, song);
         cout << song + 1 << endl;
     }
-    
+
     return 0;
 }
